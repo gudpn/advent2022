@@ -8,7 +8,7 @@ answer = 0
 with open('day2/day2_input.txt', 'r') as file:
     # Read the contents of the file
     lines = file.readlines()
-    print(lines)
+    #print(lines)
 for line in lines:
         #line 0 , line 2 
     if line[2] == 'Y':

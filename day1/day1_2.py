@@ -5,10 +5,10 @@ maxi = 0
 asshold = []
 
 
-with open('day1_input.txt', 'r') as file:
+with open('day1/day1_input.txt', 'r') as file:
     # Read the contents of the file
     lines = file.readlines()
-    print(lines)
+   # print(lines)
 for line in lines:
     if line != '\n' :
         curr = curr+ int(line)
