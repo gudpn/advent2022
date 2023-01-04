@@ -2,7 +2,7 @@ class TreeNode():
     def __init__(self,name: str, size:int,children= None,parent= None, dir:bool = False):
         self.name = name
         self.children = []
-        self.parent = parent
+        self.parent = self
         self.size = size
         self.dir = dir
 
@@ -78,7 +78,7 @@ def smallYetBigEnough(file:TreeNode, clear:int,mini):
                 print('not good',i.get_size())
             mini = smallYetBigEnough(i,clear,mini)
     return mini
-    
+
 import re
 with open('day7/day7_input.txt', 'r') as file:
     # Read the contents of the file

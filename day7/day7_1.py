@@ -1,10 +1,11 @@
 class TreeNode():
-    def __init__(self,name: str, size:int,children= None,parent= None, dir:bool = False):
+    def __init__(self,name: str, size:int,children = None,parent= None, dir:bool = False):
         self.name = name
-        self.children = []
-        self.parent = parent
+        self.children = [] 
+        self.parent = self 
         self.size = size
         self.dir = dir
+
 
     def get_size(self):
         return self.size 
@@ -105,7 +106,8 @@ for line in lines:
     if args[0] == 'dir': #add a directory if 
         print('add directory')
         args[1] = re.sub('\n+','', args[1])
-        if current.children is None:
+        
+        if  current.children is None:
             current.children =[TreeNode(name=args[1], size = 0, parent= current, dir = True)]
         else:
             current.children.append(TreeNode(name=args[1], size = 0, parent= current, dir= True))
