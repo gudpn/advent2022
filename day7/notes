@@ -1,0 +1,16 @@
+preparaion
+
+1) create a tree dir
+2) sum the dir size 
+
+part 1: 
+1) calucator total dir size 
+ need to becareful of the order of 
+    answer = answer + self.size 
+    and 
+    answer = answer + cal(children)
+part 2: 
+read the requirement carefully 
+    30000000 - (70000000-filesys.totalsize())
+    vs
+    (70000000-filesys.totalsize())
