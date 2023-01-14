@@ -13,6 +13,7 @@ for line in lines:
         cmd = line.strip()
     else:
         cmd, num = line.strip().split(' ')
+        
   
     print("start current is ", cycle, line)
     

@@ -33,6 +33,7 @@ for line in lines:
     else:
         cmd, num = line.strip().split(' ')
 
+
     if cmd == 'noop':
         CRT = drawCRT(CRT_cycle,register)
         
