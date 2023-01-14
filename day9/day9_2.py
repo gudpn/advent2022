@@ -15,7 +15,7 @@ def movement(rope,H, T):
 
     elif abs(H[1] - T[1]) >1:# 'move left / right only '
         ####### this is very important :use H[0] as the ref as the anchor, instead of T[0]
-        ### e.g. H(2,5) , T(0,4)
+        ### e.g. H(1,5) , T(0,3)
        
         if H[1] > T[1]:
             T= (H[0] ,T[1]+1)
